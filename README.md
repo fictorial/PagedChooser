@@ -3,6 +3,8 @@
 This is a cleanroom implementation of the chooser found in the help screens of 
 the game "Monster Flip" for Cocos2D-iPhone.
 
+Here is a [demo movie](http://dl.dropbox.com/u/4153528/PagedChooserDemo.mov).
+
 ## TODO
 
 Add a UIPageControl-alike class. You can use the delegate to update such.
