@@ -11,7 +11,7 @@
 
 @end
 
-@interface PagedChooser : CCLayerColor
+@interface PagedChooser : CCLayer
 
 - (id)initWithPages:(NSArray *)pages pageSize:(CGSize)pageSize delegate:(id<PagedChooserDelegate>)delegate;
 

@@ -32,7 +32,7 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 @synthesize delegate, originalPosition, pageSize, currentPageIndex;
 
 - (id)initWithPages:(NSArray *)pages pageSize:(CGSize)thePageSize delegate:(id<PagedChooserDelegate>)delegate {
-    self = [super initWithColor:ccc4(128, 64, 64, 255)];
+    self = [super init];
     
     if (self) {
         self.pageSize = thePageSize;

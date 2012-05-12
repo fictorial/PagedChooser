@@ -10,12 +10,7 @@
 }
 
 - (CCLayer *)dummyLayer:(int)index {
-    ccColor4B colors[] = {
-        ccc4(255, 255, 255, 255),
-        ccc4(128, 128, 128, 255),
-        ccc4(64, 64, 64, 255)
-    };
-    CCLayer *layer = [CCLayerColor layerWithColor:colors[index]];    
+    CCLayer *layer = [CCLayer node];
     CCSprite *sprite = [CCSprite spriteWithFile:@"TestPage.png"];
     layer.contentSize = CGSizeMake(sprite.contentSize.width, [CCDirector sharedDirector].winSize.height);
     sprite.position = ccp(layer.contentSize.width/2, layer.contentSize.height/2);
