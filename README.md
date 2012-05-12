@@ -1,7 +1,9 @@
 # PagedChooser
 
-This is a cleanroom implementation of the chooser found in the help screens of 
-the game "Monster Flip" for Cocos2D-iPhone.
+A Cocos2D-iPhone cleanroom implementation of the chooser found in the help screens of 
+the game "Monster Flip".
+
+This is useful for help screens, level selectors, etc.
 
 Here is a [demo movie](http://dl.dropbox.com/u/4153528/PagedChooserDemo.mov).
 
