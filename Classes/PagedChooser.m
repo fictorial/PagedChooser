@@ -22,6 +22,7 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 @property (nonatomic, assign) CGPoint originalPosition;
 @property (nonatomic, assign) CGSize pageSize;
 @property (nonatomic, assign) NSInteger currentPageIndex;
+@property (nonatomic, assign) NSInteger pageCount;
 
 - (void)updateScales;
 
@@ -29,13 +30,16 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 
 @implementation PagedChooser
 
-@synthesize delegate, originalPosition, pageSize, currentPageIndex;
+@synthesize delegate, originalPosition, pageSize, currentPageIndex, pageCount;
 
-- (id)initWithPages:(NSArray *)pages pageSize:(CGSize)thePageSize delegate:(id<PagedChooserDelegate>)delegate {
+- (id)initWithPages:(NSArray *)pages pageSize:(CGSize)thePageSize delegate:(id<PagedChooserDelegate>)theDelegate {
     self = [super init];
     
     if (self) {
+        self.delegate = theDelegate;
+        self.pageCount = pages.count;
         self.pageSize = thePageSize;
+        
         CGFloat x = self.contentSize.width/2;
         for (NSUInteger i = 0; i < pages.count; ++i, x += thePageSize.width) {
             CCLayer *thisPage = [pages objectAtIndex:i];
@@ -44,7 +48,8 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
             thisPage.position = ccp(x, self.contentSize.height/2);
             [self addChild:thisPage];
         }
-        [self updateScales];
+        
+        [self updateScales];        
     }
     
     return self;
@@ -141,6 +146,11 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 }
 
 - (void)ccTouchCancelled:(UITouch *)touch withEvent:(UIEvent *)event {
+    [self animateIntoProperPositions];
+}
+
+- (void)makePageCurrent:(NSUInteger)index {
+    self.currentPageIndex = MIN(self.pageCount - 1, MAX(0, index));
     [self animateIntoProperPositions];
 }
 

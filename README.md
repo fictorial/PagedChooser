@@ -7,10 +7,6 @@ This is useful for help screens, level selectors, etc.
 
 Here is a [demo movie](http://dl.dropbox.com/u/4153528/PagedChooserDemo.mov).
 
-## TODO
-
-Add a UIPageControl-alike class. You can use the delegate to update such.
- 
 ## Author
 
 Brian Hammond (brian@fictorial.com)

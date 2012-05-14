@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60386E6F155F79AF00418AE4 /* PageIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60386E6E155F79AF00418AE4 /* PageIndicatorLayer.m */; };
 		6052E5A4155E07EE00A8E102 /* TestPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6052E5A3155E07EE00A8E102 /* TestPage.png */; };
 		60B52876155DEA0500DA9279 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B52875155DEA0500DA9279 /* QuartzCore.framework */; };
 		60B52878155DEA0500DA9279 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B52877155DEA0500DA9279 /* OpenGLES.framework */; };
@@ -125,6 +126,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60386E6D155F79AF00418AE4 /* PageIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageIndicatorLayer.h; sourceTree = "<group>"; };
+		60386E6E155F79AF00418AE4 /* PageIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageIndicatorLayer.m; sourceTree = "<group>"; };
 		6052E5A3155E07EE00A8E102 /* TestPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestPage.png; path = Resources/TestPage.png; sourceTree = "<group>"; };
 		60B52871155DEA0500DA9279 /* PagedChooserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedChooserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B52875155DEA0500DA9279 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -752,6 +755,8 @@
 			children = (
 				60B529EA155DEA9E00DA9279 /* PagedChooser.h */,
 				60B529EB155DEA9E00DA9279 /* PagedChooser.m */,
+				60386E6D155F79AF00418AE4 /* PageIndicatorLayer.h */,
+				60386E6E155F79AF00418AE4 /* PageIndicatorLayer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -923,6 +928,7 @@
 				60B529DF155DEA0700DA9279 /* RootViewController.m in Sources */,
 				60B529E2155DEA0700DA9279 /* HelloWorldLayer.m in Sources */,
 				60B529EC155DEA9E00DA9279 /* PagedChooser.m in Sources */,
+				60386E6F155F79AF00418AE4 /* PageIndicatorLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

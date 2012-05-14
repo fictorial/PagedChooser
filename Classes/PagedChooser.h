@@ -14,6 +14,7 @@
 @interface PagedChooser : CCLayer
 
 - (id)initWithPages:(NSArray *)pages pageSize:(CGSize)pageSize delegate:(id<PagedChooserDelegate>)delegate;
+- (void)makePageCurrent:(NSUInteger)index;
 
 @property (nonatomic, assign) id<PagedChooserDelegate> delegate;
 
