@@ -84,8 +84,10 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     if (self.visible) {
         CGPoint curr = [[CCDirector sharedDirector] convertToGL:[touch locationInView:touch.view]];
-        self.originalPosition = curr;
-        return YES;
+        if (CGRectContainsPoint(self.boundingBox, curr)) {
+            self.originalPosition = curr;
+            return YES;
+        }
     }
     return NO;
 }

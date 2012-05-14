@@ -28,7 +28,12 @@
     float spaceSize = dotSize * 2;
     float allDotsWidth = spaceSize * (pageCount - 1);
     CGPoint point = CGPointMake(self.contentSize.width/2 - allDotsWidth/2, self.contentSize.height/2);
-    
+
+    // Disable for "square dots" else this renders round dots
+    glEnable(GL_POINT_SMOOTH);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     glPointSize(dotSize);
     
     for (NSUInteger i = 0; i < pageCount; ++i) {
@@ -58,7 +63,8 @@
 #pragma mark - touch
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
-    return self.visible && self.touchesChangeActivePage;
+    CGPoint curr = [[CCDirector sharedDirector] convertToGL:[touch locationInView:touch.view]];
+    return self.visible && self.touchesChangeActivePage &&CGRectContainsPoint(self.boundingBox, curr);
 }
 
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -70,7 +76,6 @@
         } else {
             self.activePageIndex = MAX(self.activePageIndex - 1, 0);
         }
-        NSLog(@"active page updated from tocuh to %d", self.activePageIndex);
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(activePageIndexDidChangeFromTouchIn:)]) {
             [self.delegate activePageIndexDidChangeFromTouchIn:self];
