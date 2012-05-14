@@ -25,7 +25,7 @@ static int kPageIndicatorTag = 2;
 }
 
 - (id)init {
-	if ((self = [super initWithColor:ccc4(200, 200, 128, 255)])) {
+	if ((self = [super initWithColor:ccc4(200, 200, 200, 255)])) {
         CGSize winSize = [CCDirector sharedDirector].winSize;
 
         NSArray *pages = [NSArray arrayWithObjects:[self dummyLayer:0], [self dummyLayer:1], [self dummyLayer:2], nil];
