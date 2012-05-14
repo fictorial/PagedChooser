@@ -7,6 +7,12 @@ This is useful for help screens, level selectors, etc.
 
 Here is a [demo movie](http://dl.dropbox.com/u/4153528/PagedChooserDemo.mov).
 
+## Using this Code
+
+    git clone ...
+    git submodule init
+    git submodule update
+
 ## Author
 
 Brian Hammond (brian@fictorial.com)
