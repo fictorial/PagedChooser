@@ -1,5 +1,6 @@
 #import "HelloWorldLayer.h"
 #import "PageIndicatorLayer.h"
+#import "CCSpriteButton.h"
 
 static float kPageIndicatorHeight = 40;
 
@@ -15,12 +16,26 @@ static int kPageIndicatorTag = 2;
 	return scene;
 }
 
+- (void)sayHello {
+    NSLog(@"hello");
+}
+
+- (CCSpriteButton *)makeButton {
+    CCSpriteButton *btn = [CCSpriteButton buttonWithSprite:[CCSprite spriteWithFile:@"TestButton.png"] selectedSprite:[CCSprite spriteWithFile:@"TestButtonOn.png"] label:nil target:self selector:@selector(sayHello)];
+    btn.scaleOnPush = NO;
+    return btn;
+}
+
 - (CCLayer *)dummyLayer:(int)index {
     CCLayer *layer = [CCLayer node];
-    CCSprite *sprite = [CCSprite spriteWithFile:@"TestPage.png"];
+    CCSprite *sprite = [CCSprite spriteWithFile:[NSString stringWithFormat:@"TestPage%d.png", index]];
     layer.contentSize = CGSizeMake(sprite.contentSize.width, [CCDirector sharedDirector].winSize.height - kPageIndicatorHeight);
     sprite.position = ccp(layer.contentSize.width/2, layer.contentSize.height/2);
     [layer addChild:sprite];
+    
+    CCNode *btn = [self makeButton];
+    btn.position = CGPointMake(sprite.contentSize.width/2, btn.contentSize.height*2);    
+    [sprite addChild:btn];
     return layer;
 }
 

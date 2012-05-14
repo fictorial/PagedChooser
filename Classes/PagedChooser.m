@@ -73,7 +73,7 @@ CGFloat lerp(CGFloat t, CGFloat a, CGFloat b) {
 
 - (void)onEnter {
     [super onEnter];
-    [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
+    [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:NO];
 }
 
 - (void)onExit {

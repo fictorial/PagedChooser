@@ -8,7 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		60386E6F155F79AF00418AE4 /* PageIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60386E6E155F79AF00418AE4 /* PageIndicatorLayer.m */; };
-		6052E5A4155E07EE00A8E102 /* TestPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6052E5A3155E07EE00A8E102 /* TestPage.png */; };
+		605C56531560BA0D00E3B359 /* TestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C56521560BA0D00E3B359 /* TestButton.png */; };
+		605C566D1560BA8200E3B359 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56561560BA8200E3B359 /* Button.m */; };
+		605C566E1560BA8200E3B359 /* CallFuncWithObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56581560BA8200E3B359 /* CallFuncWithObject.m */; };
+		605C566F1560BA8200E3B359 /* CCLayer+AudioPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C565A1560BA8200E3B359 /* CCLayer+AudioPanel.m */; };
+		605C56701560BA8200E3B359 /* CCLayer+Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C565C1560BA8200E3B359 /* CCLayer+Scene.m */; };
+		605C56711560BA8200E3B359 /* CCNode+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C565E1560BA8200E3B359 /* CCNode+ContentSize.m */; };
+		605C56721560BA8200E3B359 /* CCSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56601560BA8200E3B359 /* CCSpriteButton.m */; };
+		605C56731560BA8200E3B359 /* LampButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56621560BA8200E3B359 /* LampButton.m */; };
+		605C56751560BA8200E3B359 /* RNG.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56651560BA8200E3B359 /* RNG.m */; };
+		605C56761560BA8200E3B359 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C56671560BA8200E3B359 /* Slider.m */; };
+		605C56771560BA8200E3B359 /* TargetedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C566A1560BA8200E3B359 /* TargetedAction.m */; };
+		605C56781560BA8200E3B359 /* TouchableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 605C566C1560BA8200E3B359 /* TouchableNode.m */; };
+		605C567C1560BBC200E3B359 /* TestPage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C56791560BBC200E3B359 /* TestPage2.png */; };
+		605C567D1560BBC200E3B359 /* TestPage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C567A1560BBC200E3B359 /* TestPage1.png */; };
+		605C567E1560BBC200E3B359 /* TestPage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C567B1560BBC200E3B359 /* TestPage0.png */; };
+		605C56801560BCE400E3B359 /* TestButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 605C567F1560BCE400E3B359 /* TestButtonOn.png */; };
 		60B52876155DEA0500DA9279 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B52875155DEA0500DA9279 /* QuartzCore.framework */; };
 		60B52878155DEA0500DA9279 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B52877155DEA0500DA9279 /* OpenGLES.framework */; };
 		60B5287A155DEA0500DA9279 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B52879155DEA0500DA9279 /* OpenAL.framework */; };
@@ -128,7 +143,34 @@
 /* Begin PBXFileReference section */
 		60386E6D155F79AF00418AE4 /* PageIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageIndicatorLayer.h; sourceTree = "<group>"; };
 		60386E6E155F79AF00418AE4 /* PageIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageIndicatorLayer.m; sourceTree = "<group>"; };
-		6052E5A3155E07EE00A8E102 /* TestPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestPage.png; path = Resources/TestPage.png; sourceTree = "<group>"; };
+		605C56521560BA0D00E3B359 /* TestButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestButton.png; path = Resources/TestButton.png; sourceTree = "<group>"; };
+		605C56551560BA8200E3B359 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		605C56561560BA8200E3B359 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		605C56571560BA8200E3B359 /* CallFuncWithObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallFuncWithObject.h; sourceTree = "<group>"; };
+		605C56581560BA8200E3B359 /* CallFuncWithObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallFuncWithObject.m; sourceTree = "<group>"; };
+		605C56591560BA8200E3B359 /* CCLayer+AudioPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCLayer+AudioPanel.h"; sourceTree = "<group>"; };
+		605C565A1560BA8200E3B359 /* CCLayer+AudioPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCLayer+AudioPanel.m"; sourceTree = "<group>"; };
+		605C565B1560BA8200E3B359 /* CCLayer+Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCLayer+Scene.h"; sourceTree = "<group>"; };
+		605C565C1560BA8200E3B359 /* CCLayer+Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCLayer+Scene.m"; sourceTree = "<group>"; };
+		605C565D1560BA8200E3B359 /* CCNode+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+ContentSize.h"; sourceTree = "<group>"; };
+		605C565E1560BA8200E3B359 /* CCNode+ContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+ContentSize.m"; sourceTree = "<group>"; };
+		605C565F1560BA8200E3B359 /* CCSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpriteButton.h; sourceTree = "<group>"; };
+		605C56601560BA8200E3B359 /* CCSpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpriteButton.m; sourceTree = "<group>"; };
+		605C56611560BA8200E3B359 /* LampButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LampButton.h; sourceTree = "<group>"; };
+		605C56621560BA8200E3B359 /* LampButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LampButton.m; sourceTree = "<group>"; };
+		605C56641560BA8200E3B359 /* RNG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNG.h; sourceTree = "<group>"; };
+		605C56651560BA8200E3B359 /* RNG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNG.m; sourceTree = "<group>"; };
+		605C56661560BA8200E3B359 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		605C56671560BA8200E3B359 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
+		605C56681560BA8200E3B359 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		605C56691560BA8200E3B359 /* TargetedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetedAction.h; sourceTree = "<group>"; };
+		605C566A1560BA8200E3B359 /* TargetedAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetedAction.m; sourceTree = "<group>"; };
+		605C566B1560BA8200E3B359 /* TouchableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchableNode.h; sourceTree = "<group>"; };
+		605C566C1560BA8200E3B359 /* TouchableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchableNode.m; sourceTree = "<group>"; };
+		605C56791560BBC200E3B359 /* TestPage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestPage2.png; path = Resources/TestPage2.png; sourceTree = "<group>"; };
+		605C567A1560BBC200E3B359 /* TestPage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestPage1.png; path = Resources/TestPage1.png; sourceTree = "<group>"; };
+		605C567B1560BBC200E3B359 /* TestPage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestPage0.png; path = Resources/TestPage0.png; sourceTree = "<group>"; };
+		605C567F1560BCE400E3B359 /* TestButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TestButtonOn.png; path = Resources/TestButtonOn.png; sourceTree = "<group>"; };
 		60B52871155DEA0500DA9279 /* PagedChooserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedChooserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B52875155DEA0500DA9279 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		60B52877155DEA0500DA9279 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -383,9 +425,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		605C56541560BA8200E3B359 /* CCButtonSupport */ = {
+			isa = PBXGroup;
+			children = (
+				605C56551560BA8200E3B359 /* Button.h */,
+				605C56561560BA8200E3B359 /* Button.m */,
+				605C56571560BA8200E3B359 /* CallFuncWithObject.h */,
+				605C56581560BA8200E3B359 /* CallFuncWithObject.m */,
+				605C56591560BA8200E3B359 /* CCLayer+AudioPanel.h */,
+				605C565A1560BA8200E3B359 /* CCLayer+AudioPanel.m */,
+				605C565B1560BA8200E3B359 /* CCLayer+Scene.h */,
+				605C565C1560BA8200E3B359 /* CCLayer+Scene.m */,
+				605C565D1560BA8200E3B359 /* CCNode+ContentSize.h */,
+				605C565E1560BA8200E3B359 /* CCNode+ContentSize.m */,
+				605C565F1560BA8200E3B359 /* CCSpriteButton.h */,
+				605C56601560BA8200E3B359 /* CCSpriteButton.m */,
+				605C56611560BA8200E3B359 /* LampButton.h */,
+				605C56621560BA8200E3B359 /* LampButton.m */,
+				605C56641560BA8200E3B359 /* RNG.h */,
+				605C56651560BA8200E3B359 /* RNG.m */,
+				605C56661560BA8200E3B359 /* Slider.h */,
+				605C56671560BA8200E3B359 /* Slider.m */,
+				605C56681560BA8200E3B359 /* SynthesizeSingleton.h */,
+				605C56691560BA8200E3B359 /* TargetedAction.h */,
+				605C566A1560BA8200E3B359 /* TargetedAction.m */,
+				605C566B1560BA8200E3B359 /* TouchableNode.h */,
+				605C566C1560BA8200E3B359 /* TouchableNode.m */,
+			);
+			path = CCButtonSupport;
+			sourceTree = "<group>";
+		};
 		60B52866155DEA0500DA9279 = {
 			isa = PBXGroup;
 			children = (
+				605C56541560BA8200E3B359 /* CCButtonSupport */,
 				60B529E9155DEA7A00DA9279 /* Classes */,
 				60B52885155DEA0500DA9279 /* PagedChooserDemo */,
 				60B52874155DEA0500DA9279 /* Frameworks */,
@@ -436,7 +509,11 @@
 		60B52886155DEA0500DA9279 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6052E5A3155E07EE00A8E102 /* TestPage.png */,
+				605C567F1560BCE400E3B359 /* TestButtonOn.png */,
+				605C56791560BBC200E3B359 /* TestPage2.png */,
+				605C567A1560BBC200E3B359 /* TestPage1.png */,
+				605C567B1560BBC200E3B359 /* TestPage0.png */,
+				605C56521560BA0D00E3B359 /* TestButton.png */,
 				60B52887155DEA0500DA9279 /* Default.png */,
 				60B52889155DEA0500DA9279 /* fps_images.png */,
 				60B5288B155DEA0500DA9279 /* Icon-72.png */,
@@ -820,7 +897,11 @@
 				60B52894155DEA0500DA9279 /* Icon.png in Resources */,
 				60B52896155DEA0500DA9279 /* Icon@2x.png in Resources */,
 				60B52899155DEA0500DA9279 /* iTunesArtwork in Resources */,
-				6052E5A4155E07EE00A8E102 /* TestPage.png in Resources */,
+				605C56531560BA0D00E3B359 /* TestButton.png in Resources */,
+				605C567C1560BBC200E3B359 /* TestPage2.png in Resources */,
+				605C567D1560BBC200E3B359 /* TestPage1.png in Resources */,
+				605C567E1560BBC200E3B359 /* TestPage0.png in Resources */,
+				605C56801560BCE400E3B359 /* TestButtonOn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,6 +1010,17 @@
 				60B529E2155DEA0700DA9279 /* HelloWorldLayer.m in Sources */,
 				60B529EC155DEA9E00DA9279 /* PagedChooser.m in Sources */,
 				60386E6F155F79AF00418AE4 /* PageIndicatorLayer.m in Sources */,
+				605C566D1560BA8200E3B359 /* Button.m in Sources */,
+				605C566E1560BA8200E3B359 /* CallFuncWithObject.m in Sources */,
+				605C566F1560BA8200E3B359 /* CCLayer+AudioPanel.m in Sources */,
+				605C56701560BA8200E3B359 /* CCLayer+Scene.m in Sources */,
+				605C56711560BA8200E3B359 /* CCNode+ContentSize.m in Sources */,
+				605C56721560BA8200E3B359 /* CCSpriteButton.m in Sources */,
+				605C56731560BA8200E3B359 /* LampButton.m in Sources */,
+				605C56751560BA8200E3B359 /* RNG.m in Sources */,
+				605C56761560BA8200E3B359 /* Slider.m in Sources */,
+				605C56771560BA8200E3B359 /* TargetedAction.m in Sources */,
+				605C56781560BA8200E3B359 /* TouchableNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
